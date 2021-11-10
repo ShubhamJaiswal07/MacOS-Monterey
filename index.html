@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>macOS Monterey</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="pic">
+
+      <div id="top">
+
+      </div>
+      <div id="clock">8:10</div>
+
+        <img id="image22" src="001.png" width="20%" />
+        <img id="image23" src="009.png" width="15%" />
+        <img id="image24" src="008.png" width="20%" />
+        <img id="image25" src="007.png" width="20%" />
+
+        <div id="apple">
+          <img src="logo.png" onclick="show_hide12()" width="3%">
+        </div>
+        <div id="bluetooth">
+          <img src="bluetooth.png" onclick="show_hide13()" width="20%">
+        </div>
+        <div id="search">
+          <img src="search.png" onclick="show_hide14()" width="19%">
+        </div>
+        <div id="wifi">
+          <img src="wifi.png" onclick="show_hide15()" width="19%">
+        </div>
+        <div id="Findertext">
+          <b>Finder</b>
+        </div>
+        <div id="File">
+          <p>File</p>
+        </div>
+        <div id="Edit">
+          <p>Edit</p>
+        </div>
+        <div id="Window">
+          <p>Window</p>
+        </div>
+        <div id="Help">
+          <p>Help</p>
+        </div>
+
+
+        <img id="image11" src="01.png" width="75%" />
+          <img id="image12" src="02.png" width="75%" />
+            <img id="image13" src="03.png" width="60%" />
+              <img id="image14" src="04.png" width="70%" />
+                <img id="image15" src="05.png" width="50%" />
+                  <img id="image16" src="06.png" width="70%" />
+                  <img id="image17" src="07.png" width="66%" />
+                    <img id="image18" src="08.png" width="70%" />
+                      <img id="image19" src="09.png" width="70%" />
+                        <img id="image20" src="010.png" width="70%" />
+                          <img id="image21" src="011.png" width="50%" />
+
+
+
+
+      <div id="transparent"></div>
+      <div class="pics">
+
+
+      <div id="finder">
+        <img src="finder.tiff" onclick="show_hide()" alt="" width="40%">
+
+        </div>
+
+
+      </div>
+      <div id="launchpad">
+        <img src="launchpad.tiff" onclick="show_hide2()" alt="" width="40%">
+
+      </div>
+      <div id="safari">
+        <img src="safari.tiff" onclick="show_hide3()" alt="" width="40%">
+
+      </div>
+      <div id="appstore">
+        <img src="appstore.tiff" onclick="show_hide4()" alt="" width="40%">
+
+      </div>
+      <div id="messages">
+        <img src="messages.tiff"  onclick="show_hide5()" alt="" width="40%">
+
+      </div>
+      <div id="calender">
+          <img src="calender.tiff" onclick="show_hide6()" alt="" width="40%">
+
+
+      </div>
+      <div id="facetime">
+        <img src="facetime.tiff" onclick="show_hide7()" alt="" width="40%">
+
+      </div>
+      <div id="notes">
+      <img src="notes.tiff" onclick="show_hide8()" alt="" width="40%">
+
+      </div>
+      <div id="tv">
+        <img src="tv.tiff" onclick="show_hide9()" alt="" width="40%">
+
+      </div>
+      <div id="music">
+        <img src="music.tiff" onclick="show_hide10()" alt="" width="40%">
+
+      </div>
+      <div id="settings">
+        <img src="settings.tiff" onclick="show_hide11()" alt="" width="40%">
+
+      </div>
+      </div>
+
+      <div>
+        <video class="vid" src="Monterey.mp4" autoplay muted poster="posterimage.jpg" width="120%">
+
+        </video>
+      </div>
+
+
+
+
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":"
+                + min + ":" + sec + am_pm;
+
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+
+        showTime();
+
+        var a;
+        function show_hide()
+        {
+          if(a==1)
+          { document.getElementById("image11").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image11").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide2()
+        {
+          if(a==1)
+          { document.getElementById("image12").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image12").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide3()
+        {
+          if(a==1)
+          { document.getElementById("image13").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image13").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide4()
+        {
+          if(a==1)
+          { document.getElementById("image14").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image14").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide5()
+        {
+          if(a==1)
+          { document.getElementById("image15").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image15").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide6()
+        {
+          if(a==1)
+          { document.getElementById("image16").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image16").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide7()
+        {
+          if(a==1)
+          { document.getElementById("image17").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image17").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide8()
+        {
+          if(a==1)
+          { document.getElementById("image18").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image18").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide9()
+        {
+          if(a==1)
+          { document.getElementById("image19").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image19").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide10()
+        {
+          if(a==1)
+          { document.getElementById("image20").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image20").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide11()
+        {
+          if(a==1)
+          { document.getElementById("image21").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image21").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide12()
+        {
+          if(a==1)
+          { document.getElementById("image22").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image22").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide13()
+        {
+          if(a==1)
+          { document.getElementById("image23").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image23").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide14()
+        {
+          if(a==1)
+          { document.getElementById("image24").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image24").style.display="none";
+            return a=1;
+          }
+        }
+        var a;
+        function show_hide15()
+        {
+          if(a==1)
+          { document.getElementById("image25").style.display="inline";
+          return a=0;
+          }
+          else
+          {
+            document.getElementById("image25").style.display="none";
+            return a=1;
+          }
+        }
+
+    </script>
+  </body>
+</html>
